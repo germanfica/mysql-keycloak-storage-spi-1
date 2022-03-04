@@ -19,6 +19,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <maven-ear.version>3.0.2</maven-ear.version>
+        <wildfly.version>1.2.0.Final</wildfly.version>
 
         <lombok.version>1.18.12</lombok.version>
         <jboss-logging.version>3.3.1.Final</jboss-logging.version>
@@ -54,7 +55,7 @@
             <plugin>
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
-                <version>1.2.0.Final</version>
+                <version>${wildfly.version}</version>
                 <configuration>
                     <hostname>127.0.0.1</hostname>
                     <port>10090</port>
