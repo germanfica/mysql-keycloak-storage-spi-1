@@ -23,3 +23,32 @@ of the user federation provider.
 Build and Deploy `.ear` package to wildfly.
 This copies the `.ear` file to `standalone/deployments` folder.
 - `$ mvn clean install wildfly:deploy -Djboss-as.home=$KEYCLOAK_HOME`
+
+### Maven plugins
+
+Apache Maven EAR Plugin
+```xml
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-ear-plugin -->
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-ear-plugin</artifactId>
+    <version>3.2.0</version>
+	<configuration>
+		<version>8</version> <!-- It is not JDK version. It is J2EE/Java EE version -->
+		<includeLibInApplicationXml>true</includeLibInApplicationXml>
+	</configuration>
+</plugin>
+```
+
+You can learn more about J2EE/Java EE here:
+
+- https://www.oracle.com/java/technologies/java-ee-glance.html
+- https://access.redhat.com/articles/113373
+- https://www.devopsdigest.com/red-hat-jboss-enterprise-application-platform-72-released
+
+### Maven commands
+
+Builds J2EE Enterprise Archive (EAR) files.
+```
+mvn clean ear:ear
+```
