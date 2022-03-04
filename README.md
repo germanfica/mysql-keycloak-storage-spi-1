@@ -42,6 +42,7 @@ Apache Maven EAR Plugin
 
 You can learn more about J2EE/Java EE here:
 
+- https://stackoverflow.com/a/36703404
 - https://www.oracle.com/java/technologies/java-ee-glance.html
 - https://access.redhat.com/articles/113373
 - https://www.devopsdigest.com/red-hat-jboss-enterprise-application-platform-72-released
