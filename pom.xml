@@ -24,6 +24,7 @@
         <keycloak.version>8.0.1</keycloak.version>
         <auto-service.version>1.0-rc5</auto-service.version>
         <jboss.home>target/keycloak</jboss.home>
+        <java-ee.version>7</java-ee.version>
     </properties>
 
     <dependencyManagement>
@@ -45,7 +46,7 @@
                 <artifactId>maven-ear-plugin</artifactId>
                 <version>3.0.2</version>
                 <configuration>
-                    <version>7</version> <!-- It is not JDK version. It is J2EE/Java EE version -->
+                    <version>${java-ee.version}</version> <!-- It is not JDK version. It is J2EE/Java EE version -->
                 </configuration>
             </plugin>
 
